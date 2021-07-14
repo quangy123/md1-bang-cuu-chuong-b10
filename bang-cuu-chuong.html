@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table,tr,td{
+            border: solid 1px black;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+<h1 >BẢNG CỬU CHƯƠNG</h1>
+<div id="lap" ></div>
+<script>
+    let table = '<table>';
+    for (let i = 0;i<=10;i++){
+        table+='<tr>';
+        for (let j = 1;j<=9;j++){
+            table+= '<td>'+i+' X '+j+' = '+(i*j)+'</td>'
+        }
+        table+='</tr>';
+    }
+    table+='</table>';
+    document.getElementById('lap').innerHTML=table;
+</script>
+</body>
+</html>
